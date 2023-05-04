@@ -16,3 +16,7 @@ K-AGB is a Python framework that enables the use of stochastic simulation of abo
 - Statistic downscaling using multivariate linear regression with NDVI, EVI and LAI (use MODIS database as a reference: https://modis.gsfc.nasa.gov/).
 - Estimation of biomass probability distrbutions and quantile transformation using prumery data.
 - MonteCarlo simulation of biomass using land cover category as the main driver.
+
+# Conceptualization
+
+![](/auxiliar_git/logos/logosKAGB.jpg)
