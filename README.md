@@ -1,4 +1,4 @@
-![](https://github.com/odalvare/K-AGB/auxiliar_git/logos/logosKAGB.jpg)
+![](/auxiliar_git/logos/logosKAGB.jpg)
 
 # K-AGB
 Stochastic simulation of aboveground biomass driven by land cover changes.
