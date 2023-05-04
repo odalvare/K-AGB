@@ -10,4 +10,7 @@ Tropical Montane Forests (TMFs) are known for their freshwater resources, which 
 
 K-AGB is a Python framework that enables the use of stochastic simulation of aboveground biomass (stored by the vegetation) and the equivalente of stored carbon. Some features that you can use from K-AGB are:
 
-- Stochastic geostatistical simulation supported by geostatspy (https://github.com/GeostatsGuy/GeostatsPy)
+- Stochastic geostatistical simulation supported by geostatspy (https://github.com/GeostatsGuy/GeostatsPy) to fill uncertainty models of the secondary biomass data (e.g. GEDI database, from: https://daac.ornl.gov/GEDI/guides/GEDI_L4B_Gridded_Biomass.html).
+- Statistic downscaling using multivariate linear regression with NDVI, EVI and LAI (use MODIS database as a reference: https://modis.gsfc.nasa.gov/).
+- Estimation of biomass probability distrbutions and quantile transformation using prumery data.
+- MonteCarlo simulation of biomass using land cover category as the main driver.
