@@ -17,6 +17,14 @@ K-AGB is a Python framework that enables the use of stochastic simulation of abo
 - Estimation of biomass probability distrbutions and quantile transformation using prumery data.
 - MonteCarlo simulation of biomass using land cover category as the main driver.
 
-# Conceptualization
+## Conceptualization
 
 ![K-AGB conceptualization](/auxiliar_git/images/ConceptualFrameWork.jpg)
+
+Figure extracted from Álvarez-Villa et al. (2023), rights protected.
+
+# Requires packages
+
+# Support
+
+Oscar D. Álvarez-Villa (oscar.alvarez@emergente.com.com)
