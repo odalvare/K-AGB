@@ -1,4 +1,4 @@
-![](/auxiliar_git/logos/logosKAGB.jpg)
+![sponsors](/auxiliar_git/logos/logosKAGB.jpg)
 
 # K-AGB
 Stochastic simulation of aboveground biomass driven by land cover changes.
@@ -19,4 +19,4 @@ K-AGB is a Python framework that enables the use of stochastic simulation of abo
 
 # Conceptualization
 
-![](/auxiliar_git/logos/logosKAGB.jpg)
+![K-AGB conceptualization](/auxiliar_git/images/ConceptualFrameWork.jpg)
