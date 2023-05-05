@@ -55,6 +55,10 @@ K-AGB requires the installation of the following packages for its correct perfor
 
 - geostatspy v. 0.0.26.
 
+# Data availability
+
+The information required to perform a test biomass simulation via K-AGB can be downloaded from: https://nextcloud.emergente.com.co/nextcloud/index.php/s/n64iyAoLfnYkqAf
+
 # Support
 
 Long-term support of the K-AGB utilities will be provided by Emergente (https://www.emergente.com.co/). Dr Oscar D. Álvarez-Villa (email: oscar.alvarez@emergente.com.com) is the principal developer of the project.
