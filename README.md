@@ -23,8 +23,38 @@ K-AGB is a Python framework that enables the use of stochastic simulation of abo
 
 Figure extracted from Álvarez-Villa et al. (2023), rights protected.
 
-# Requires packages
+# Required packages
+
+K-AGB requires the installation of the following packages for its correct performance. It is strongly encoraged the use of anaconda to create an individual environmente (https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+
+### Basic packages
+
+- python v. 3.7.12.
+- matplotlib v. 3.5.7.
+- pandas v. 1.3.4.
+
+### Computing packages
+
+- numpy v. 1.21.5.
+- numba v. 0.55.1.
+- scipy v. 1.7.3.
+- scikit-learn v. 1.0.2.
+- statsmodels v. 0.13.1.
+- fsspec v. 2022.11.10.
+
+### GIS packages
+
+- gdal v. 3.0.2.
+- fiona v. 1.8.13.
+- rasterio v. 1.1.0.
+- geopandas v. 0.10.2.
+- shapely v. 1.7.1.
+- pyproj v. 6.2.1.
+
+### Geostatistics packages
+
+- geostatspy v. 0.0.26.
 
 # Support
 
-Oscar D. Álvarez-Villa (oscar.alvarez@emergente.com.com)
+Long-term support of the K-AGB utilities will be provided by Emergente (https://www.emergente.com.co/). Dr Oscar D. Álvarez-Villa (email: oscar.alvarez@emergente.com.com) is the principal developer of the project.
