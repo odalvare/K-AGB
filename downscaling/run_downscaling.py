@@ -32,7 +32,8 @@ class DownScaling:
     #Begining of constructor --------------------------------------------------
     def __init__(self,project,params):
         """
-        Construction of an instance for reading K-AGB basic execution parameters
+        Construction of an instance for performing linear multivariate bias
+        corrected downscaling of biomass
 
         Parameters:
         ----------

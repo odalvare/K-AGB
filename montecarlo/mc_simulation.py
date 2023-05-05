@@ -12,7 +12,7 @@ import gc
 import rasterio
 import time
 
-#Detect operaring system and apply folder delimiter
+#Detect operating system and apply folder delimiter
 ost=platform.system()
 delim='/'
 if(ost=='Windows'):
@@ -29,7 +29,7 @@ class MonteCarloBiomass:
     #Begining of constructor --------------------------------------------------
     def __init__(self,project,params,foldername):
         """
-        Construction of an instance for reading K-AGB basic execution parameters
+        Construction of an instance for performing biomass MonteCarlo simulation
 
         Parameters:
         ----------
@@ -37,6 +37,9 @@ class MonteCarloBiomass:
                 The folder location of the project
             parameters : dictionary
                 Basic parameters of the project
+            foldername : string
+                Name of the folder storing the biomass maps in
+                project/data/montecarlo/landcover/foldername/names[i].tif
         
         Returns:
         -------
@@ -77,8 +80,7 @@ class MonteCarloBiomass:
         
         Returns:
         -------
-            names : list
-                array of names
+            null
         """
             
         #code begins here
@@ -173,8 +175,6 @@ class MonteCarloBiomass:
         del back_funcs
         
         gc.collect()
-        
-        return biomassen
     
     #End of method ------------------------------------------------------------
     

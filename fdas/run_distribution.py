@@ -15,7 +15,7 @@ import gc
 
 import rasterio
 
-#Detect operaring system and apply folder delimiter
+#Detect operating system and apply folder delimiter
 ost=platform.system()
 delim='/'
 if(ost=='Windows'):
@@ -31,7 +31,9 @@ class ProbabilityDistributions:
     #Begining of constructor --------------------------------------------------
     def __init__(self,project,params,refyr):
         """
-        Construction of an instance for reading K-AGB basic execution parameters
+        Construction of an instance for estimating the biomass cumulative 
+        probabily distribution for the secondary information for land cover 
+        categories of interest
 
         Parameters:
         ----------
@@ -39,6 +41,9 @@ class ProbabilityDistributions:
                 The folder location of the project
             parameters : dictionary
                 Basic parameters of the project
+            reyr : int
+                Reference year corresponding to the biomass availables data and
+                landcover categories to estimate the corresponding cdfs
         
         Returns:
         -------
@@ -174,14 +179,9 @@ class ProbabilityDistributions:
         rtcpf=self.__workspace+'data'+delim+'fdas'+delim+'Biomass_cpf_unc.csv'
         dfcpf.to_csv(rtcpf,sep=',')
         
-        # del arrcoveren,mask,biomassdata,coverdata,logbiomassdata,biomassdataar
-        # del mask1,mask2,mask12,arrcover
+        del arrcoveren,mask,biomassdata,coverdata,logbiomassdata,biomassdataar
+        del mask1,mask2,mask12,arrcover
         
-        # gc.collect()
-        
-        # return expdist
-        
-        return self.__arrbio,arrcoveren,mask,biomassdata,coverdata,expdist
-        
+        gc.collect()
         
     #End of method ------------------------------------------------------------

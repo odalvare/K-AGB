@@ -5,8 +5,6 @@ Created on Mon Apr 24 10:55:12 2023
 @author: oscar
 """
 
-import sys
-import os
 import platform
 import gc
 
@@ -19,7 +17,6 @@ if(ost=='Windows'):
     delim='//'
 
 import numpy as np
-import pandas as pd
 import geostatspy.geostats as geostats
 import geostatspy.GSLIB as GSLIB
 
@@ -28,7 +25,7 @@ class runSGSIM:
     #Begining of constructor --------------------------------------------------
     def __init__(self,project,dfbio,bparams,bmeta,variodict,sgsimparams):
         """
-        Construction of an instance for running sgsim
+        Construction of an instance for running sgsim via geostatspy
 
         Parameters:
         ----------
@@ -130,9 +127,9 @@ class runSGSIM:
     #End of constructor -------------------------------------------------------
     
     #Begining of method -------------------------------------------------------
-    def runModel(self):
+    def runSimulation(self):
         """
-        Returns the biomass dataframe
+        Runs SGSIM using the current settings
 
         Parameters:
         ----------        
@@ -140,7 +137,9 @@ class runSGSIM:
         
         Returns:
         -------
-            null
+            sims : numpy float array
+                Simulated biomass array
+                
         """
             
         #code begins here
@@ -206,7 +205,6 @@ class runSGSIM:
                                     ny=rows,
                                     ymn=miny,
                                     ysiz=r,
-                                    #seed=sgsimparams['seed'],
                                     seed=seed,
                                     ndmin=self.__sgsimparams['ndmin'],
                                     ndmax=self.__sgsimparams['ndmax'],
@@ -226,6 +224,8 @@ class runSGSIM:
         
             sims[i,:,:]=sim_sk[:,:]
             del sim_sk
+            
+            gc.collect()
         
         # Write sgsim simulations
         
